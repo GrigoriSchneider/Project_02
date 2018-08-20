@@ -1,0 +1,275 @@
+/* Base Element Styles */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Catamaran', sans-serif;
+    line-height: 1.6;
+    color: #3a3a3a;
+}
+
+p{
+    margin: 0 14px 20px;
+    font-size: 1.2em;
+    margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a{
+    color: #444;
+}
+
+h2,
+h3{
+    margin-top: 0;
+}
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+nav{
+    display: inline-block;
+    width: 100%;
+}
+.main-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Base Layout Styles */
+h1 {
+    font-family: 'Audiowide', sans-serif;
+    color: #444;
+    margin: 12px 0;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: 'Catamaran', sans-serif;
+    text-transform: uppercase;
+    padding: 30px;
+    margin: 0 auto;
+    font-size: 1em;
+    color: #444;
+}
+
+h1,
+h2,
+h3,
+p{
+    text-align: center;
+}
+body{
+    background-color: darkgray;
+}
+
+.main{
+    background-color: white;
+}
+ .skills ul{
+     padding: 0;
+     text-align: center;
+ }
+
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* ---- Navigation ---- */
+
+.name{
+    font-size: 1.25em;
+    margin: 0;
+}
+.name1024px{
+    display: none;
+}
+
+.main-nav{
+
+    margin-top:  5px;
+    margin-bottom: 5px;
+    background-color: rgba(62, 46, 18, 0.12);
+}
+
+.name a,
+.main-nav a{
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.main-nav a{
+    display: block;
+    font-size: 1.25em;
+    color: #444;
+    text-transform: uppercase;
+    background-color: white;
+    margin: .3em .7em;
+}
+.main-nav a:hover {
+    color: #de533b;
+}
+a:visited{
+    color: gold;
+}
+
+/* ---- Layout Containers ---- */
+.profil-pic{
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.main-header{
+    padding-top: .5em;
+    padding-bottom: .5em;
+    color: floralwhite;
+}
+.main{
+    width: 100%;
+    margin: auto;
+}
+.col{
+    padding-right: 1em;
+    padding-left: 1em;
+
+}
+
+.footer{
+    width: 95%;
+    padding-top: 0.5em;
+    padding-bottom: 1.5em;
+    margin-top: 30px;
+    border-top: solid 1px slategrey;
+    font-weight: bold;
+
+
+}
+
+#foot-name{
+    float: left;
+    padding-left: 25px;
+}
+.footer li{
+    float: right;
+    margin-right: 25px;
+}
+.footer li a{
+    float: left;
+}
+.top-link{
+    float: right;
+}
+.foot-nav {
+    display: none;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 768px) {
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+
+    .col{
+        display: inline-block;
+        width: 50%;
+        margin-right: -4px;
+        vertical-align: top;
+
+    }
+    .contact h1,
+    .main h1{
+        padding-top: 25px;
+        font-size: 1.3em;
+    }
+
+    .main-nav a{
+        display: inline-block;
+        margin-right: 25px;
+        background-color: transparent;
+    }
+    .main-nav{
+        margin-bottom: 50px;
+    }
+
+    .box{
+        width: 100%;
+    }
+    .profil-pic{
+        width: 350px;
+        float: right;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    .main-header{
+        text-align: center;
+        padding-bottom: 25px;
+        font-size: 1.25em;
+    }
+    .contact{
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    .top-link {
+        display: none;
+    }
+    .foot-nav{
+        display: flex;
+    }
+
+}
+
+@media (min-width: 1024px){
+    .col{
+        width: 32%;
+    }
+    .box p {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .profil-pic{
+        width: 450px;
+        margin-right: 1em;
+    }
+    .name {
+        display: none;
+
+    }
+    .name1024px{
+        display: inline-block;
+        float: left;
+        padding: 0;
+        font-size: 1.5em;
+        margin-left: 4%;
+    }
+    .main{
+        width: 95%;
+    }
+
+    .main-nav {
+        text-align: right;
+    }
+
+
+
+}
